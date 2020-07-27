@@ -1,5 +1,6 @@
 # AppDemo_TA
 
+//sử dụng git trên android studio->VCC->commit sau đó: VCC->git->Push
 
 Recoginze Text
 
@@ -19,7 +20,9 @@ Translate
 B1. Download google-services.json
   
   Nếu sử dụng google-services.json cũ thì sửa chỗ "package_name": "com.example.appdemo_ta"
+  
   sau đó copy paste vào \LaptrinhAndroid\AppDemo_TA\app\google-services.json
+  
   Hướng dẫn theo: https://firebase.google.com/docs/android/setup
   
 B2. Sử dụng translate theo hướng dẫn
