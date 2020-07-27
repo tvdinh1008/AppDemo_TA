@@ -45,13 +45,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
             <Button
-                android:id="@+id/trans_image"
+                android:id="@+id/trans_en"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="translate image"/>
+                android:text="TRANSLATE FROM EN TO VN"/>
             <Button
-                android:id="@+id/trans_sentences"
-                android:text="translate sentences"
+                android:id="@+id/trans_vn"
+                android:text="TRANSLATE FROM VN TO EN"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             </LinearLayout>

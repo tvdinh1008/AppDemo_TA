@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         getSupportActionBar().setTitle("");
         //toolbar.setNavigationIcon(R.id.action_menu);
 
-        Button transImage=findViewById(R.id.trans_image);
+        Button transImage=findViewById(R.id.trans_en);
         transImage.setOnClickListener(this);
-        Button transSentences=findViewById(R.id.trans_sentences);
+        Button transSentences=findViewById(R.id.trans_vn);
         transSentences.setOnClickListener(this);
 
     }
@@ -38,12 +38,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch(v.getId())
         {
-            case R.id.trans_image:
+            case R.id.trans_en:
                 Intent intent=new Intent(MainActivity.this,TranslateActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.trans_sentences:
-                Intent intent2=new Intent(MainActivity.this,TranslateActivity.class);
+            case R.id.trans_vn:
+                Intent intent2=new Intent(MainActivity.this,TranslateVNActivity.class);
                 startActivity(intent2);
                 break;
         }

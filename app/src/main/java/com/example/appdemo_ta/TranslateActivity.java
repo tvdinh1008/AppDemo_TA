@@ -64,14 +64,14 @@ public class TranslateActivity extends AppCompatActivity {
 
         Toolbar toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Translate Image");
+        getSupportActionBar().setTitle("Translate english");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(TranslateActivity.this, MainActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-            }
-        });
+//        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(TranslateActivity.this, MainActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+//            }
+//        });
 
         ed_result=findViewById(R.id.ed_result);
         iv_image=findViewById(R.id.iv_image);
@@ -101,7 +101,7 @@ public class TranslateActivity extends AppCompatActivity {
                             public void onSuccess(Void v) {
                                 // Model downloaded successfully. Okay to start translating.
                                 // (Set a flag, unhide the translation UI, etc.)
-                                Toast.makeText(getApplicationContext()," Model downloaded successfully",Toast.LENGTH_LONG).show();
+                               // Toast.makeText(getApplicationContext()," Model downloaded successfully",Toast.LENGTH_LONG).show();
                             }
                         })
                 .addOnFailureListener(
@@ -128,7 +128,6 @@ public class TranslateActivity extends AppCompatActivity {
                                         public void onSuccess(@NonNull String translatedText) {
                                             // Translation successful.
                                             txt_trans.setText(translatedText);
-
                                         }
                                     })
                             .addOnFailureListener(
